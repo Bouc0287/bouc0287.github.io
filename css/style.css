@@ -1,0 +1,322 @@
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* My code starts here   */
+
+html, body{
+    overflow:auto;
+    overflow-x: hidden;
+    margin: 0;
+    height: 100%;
+    font-family: sans-serif; font-weight: 100;
+    font-size: 22px;
+}
+
+a {
+    color: #326393;
+    text-decoration: none;
+    opacity: 1;
+}
+a:hover {
+    opacity: .5;
+    
+}
+
+/*  Navigation  */ 
+#main-menu {
+    overflow: hidden;
+    background-color: #326393;
+    position: fixed;
+    height: 65.5px;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#main-menu ul {
+    list-style: none;
+    margin: 0 auto;
+}
+
+#main-menu ul li {
+    float: left;
+    display: inline;
+    font-family: sans-serif; font-weight: 100;
+    font-size: 30px;
+    
+    
+}
+
+#main-menu a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* section */
+
+section {
+    position:relative;
+    margin:0 -9999rem;
+    padding: 5.25rem 9999rem;
+    text-align: center;
+    z-index: 0;
+}
+
+/* profile section  */
+#welcomesection {
+    font-size: 5vh;
+    background-color: #323233;
+    color: #ecf0f1;
+}
+
+#welcomesection p {
+    font-size: 2.7vh;
+    margin-top: -15px;
+}
+
+/*  profile pic */
+
+.circular {
+    border-radius: 50%;
+    border: 4.5px solid #ecf0f1;
+}
+
+/* about section  */
+
+#aboutsection {
+    background-color: #ecf0f1;
+    color: #323233;
+}
+
+/* paragraph alignment  */
+
+#aboutsection p, #skillssection p {
+    padding: 0 120px;
+    text-align: left;
+}
+
+/* skill section  */
+
+#skillssection {
+    background-color: #323233;
+    color: #ecf0f1;
+}
+
+
+
+#skillssection h1 {
+    color: #326393;
+    text-align: justify;
+    padding: 0 40px;
+}
+#skillssection ul li{
+    text-align: justify;
+    color: #ecf0f1;
+    list-style: disc;
+}
+
+/* portfolio section  */
+
+#worksection {
+    background-color: #ecf0f1;
+    color: #323233;
+}
+
+/* portfolio images  */
+
+img {
+    padding: 5px 5px 5px 5px;
+}
+
+.work:
+
+button{
+    background:none;
+    border:none;
+}
+
+button img {
+    width: 30px
+}
+
+button img:hover {
+  opacity: 0.5;
+    
+}
+
+
+/* contact information  */
+
+#contactsection {
+    background-color: #323233;
+    color: #ecf0f1;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-linkedin {
+    background: white;
+    color: #0077b5;
+}
+
+.fa-instagram {
+    background: #af1313;
+    color: white;
+}
+
+.fa-codepen {
+    background: black;
+    color: white;
+}
+
+
+/* nav animation  */
+
+#main-menu a:hover {
+  border-top: 4px solid #ffffff;
+  border-bottom: 4px solid #ffffff; 
+   
+}
+
+#main-menu a
+{
+  opacity:.7;
+}
+
+#main-menu a:hover
+{
+  opacity:1;
+  transition: opacity .4s ease-out;
+  -moz-transition: opacity .4s ease-out;
+  -webkit-transition: opacity .4s ease-out;
+  -o-transition: opacity .4s ease-out;
+}
+
+.sprite {
+  background-image: url(http://hikari.zackthehuman.com/blog/images/graphics/rock-running-3.png);
+  height: 160px;
+  width: 140px;
+  margin: 25px auto;
+  animation: run .4s steps(3) infinite;
+}
+
+@keyframes run {
+  0% { background-position: 0px 0px;}
+  100% { background-position: -480px 0px;}
+}
+
+
+/* scroll bar  */
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* breakpoint  */
+
+@media only screen and (max-width: 640px) {
+  
+
+    #main-menu {
+    overflow: hidden;
+    background-color: ##326393;
+    position: fixed;
+    height: 248px;
+    top: -248px;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 1000;
+    transition: top .5s;
+}
+    
+    #menubutton {
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        background-color: red;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 10001;
+    }
+
+    .transitionslide {
+        top: 0 !important;
+        transition: top .5s;
+    }
+
+#main-menu ul li {
+    display: inline;
+    font-family: sans-serif; font-weight: 100;
+    font-size: 20px;
+    width:100%;
+}
+    
+    
+#main-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+#main-menu a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    width: 100%
+}
+    
+#aboutsection p, #skillssection p {
+    padding: 0 20px;
+    text-align: left;
+}    
+
+#skillssection ul li{
+    text-align: left;
+}
+
+
+
+    
